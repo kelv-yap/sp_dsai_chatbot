@@ -1,0 +1,54 @@
+ttyl,goodbye
+byebye,goodbye
+see you around,goodbye
+bye,goodbye
+let's catchup again,goodbye
+see you,goodbye
+Have a great day,goodbye
+goodbye,goodbye
+ok bye,goodbye
+ciao,goodbye
+good afternoon,greeting
+hello,greeting
+there?,greeting
+hi,greeting
+hey,greeting
+good evening,greeting
+good day,greeting
+yo,greeting
+how are you,greeting
+good morning,greeting
+what are you hours of operation in Clementi,hours_info
+what are the hours of operation for your Orchard store,hours_info
+Are you open on Sundays?,hours_info
+What are your hours?,hours_info
+What are your hours of operation?,hours_info
+What time are you open until?,hours_info
+Are you open on Saturdays?,hours_info
+When do you open,hours_info
+When are you open,hours_info
+Are you open on Christmas' Day?,hours_info
+What days are you closed on?,hours_info
+When do you close,hours_info
+locations in Malaysia,location_info
+Where are your stores?,location_info
+What are your locations?,location_info
+List of location,location_info
+Give me a list of locations,location_info
+Locations in Singapore,location_info
+list of your locations,location_info
+what's the address of your Chinatown store?,location_info
+What's the address of your West Coast store?,location_info
+do you have a milk tea shop in Changi,location_info
+where is your Bedok store?,location_info
+Where are you physically located?,location_info
+thanks ya,thankyou
+ok thanks,thankyou
+thx,thankyou
+tq,thankyou
+thanks!,thankyou
+xie xie,thankyou
+ty,thankyou
+thank you,thankyou
+hey thanks,thankyou
+many thanks,thankyou
