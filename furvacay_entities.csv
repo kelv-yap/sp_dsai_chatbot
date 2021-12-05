@@ -1,8 +1,11 @@
 breed,Big,Golden Retriever,Labrador,Husky
 breed,Small,Pug,Chihuahua,Pomeranian
 breed,Medium,Beagle,Poodle,Shih Tzu
-location,Off site,Shop,East Coast,Store
 location,On site,Doorstep,Home,House
-service,Boarding,Overnight,Stay
-service,Grooming,Shower,Haircut
-service,Training,Toilet,Obedience
+location,Off site,Shop,East Coast,Store
+reservation,New
+reservation,Reschedule,change,postpone
+reservation,Cancel
+serviceType,Boarding,Overnight,Stay
+serviceType,Training,Toilet,Obedience
+serviceType,Grooming,Shower,Haircut
