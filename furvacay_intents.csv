@@ -1,19 +1,31 @@
+Do you have slots?,booking
+I want to change time,booking
+I want to change date,booking
+I want to make new reservation,booking
+I want to make reservation for my pet,booking
+I would like to reserve a slot,booking
+I want to book a slot,booking
+I want to make appointment,booking
+I want to postpone my reservation,booking
+I want to cancel my booking,booking
+Can I reschedule?,booking
+I want to book a service,booking
+I want to book a session for my pet,booking
 Can I reschedule my booking?,faq
+I would like to rescheduled,faq
 How to cancel my appointment?,faq
 How to cancel my booking?,faq
 Do you provide insurance coverage?,faq
-I would like to rescheduled,faq
+byebye,goodbye
 ttyl,goodbye
+ciao,goodbye
+ok bye,goodbye
+goodbye,goodbye
+Have a great day,goodbye
+see you,goodbye
+let's catchup again,goodbye
 bye,goodbye
 see you around,goodbye
-let's catchup again,goodbye
-see you,goodbye
-Have a great day,goodbye
-goodbye,goodbye
-ok bye,goodbye
-ciao,goodbye
-byebye,goodbye
-there?,greeting
 hello,greeting
 good morning,greeting
 good afternoon,greeting
@@ -23,49 +35,49 @@ good day,greeting
 good evening,greeting
 hey,greeting
 hi,greeting
-What time are you open until?,hours_info
-Are you open on Sundays?,hours_info
+there?,greeting
+Are you open on Saturdays?,hours_info
 What are your hours?,hours_info
+What are your hours of operation?,hours_info
 When do you close,hours_info
 When are you open,hours_info
 When do you open,hours_info
-Are you open on Saturdays?,hours_info
-What are your hours of operation?,hours_info
+What time are you open until?,hours_info
 Which day you close?,hours_info
 Are you available on weekend?,hours_info
 What are on-site hours?,hours_info
 Which days you open?,hours_info
 what are the hours of operation at your shop,hours_info
+Are you open on Sundays?,hours_info
+Where are you?,location_info
+How can we find you?,location_info
+location please?,location_info
+What's your address?,location_info
+Do you have a shop?,location_info
+Where are you physically located?,location_info
+Where is your location?,location_info
 What's the address of your shop?,location_info
 Where is your store?,location_info
 Where is your shop?,location_info
-Where are you?,location_info
-Do you have a shop?,location_info
-What's your address?,location_info
-location please?,location_info
-How can we find you?,location_info
-Where is your location?,location_info
-Where are you physically located?,location_info
-what is the price,price_info
 how expensive,price_info
 price,price_info
-what is the charges,price_info
 how much,price_info
-dog walking,services_info
-What are the services you provided?,services_info
-Do you have boarding service?,services_info
-Do you provide dog training?,services_info
-Do you provide grooming service?,services_info
-What do you have?,services_info
-What service do you have?,services_info
-great. tq,thankyou
+what is the price,price_info
+what is the charges,price_info
+Do you have boarding service?,services
+What are the services you provided?,services
+Do you provide grooming service?,services
+Do you provide dog training?,services
+What service do you have?,services
+What do you have?,services
+thanks ya,thankyou
 many thanks,thankyou
 hey thanks,thankyou
 thank you,thankyou
 ty,thankyou
-thanks!,thankyou
 xie xie,thankyou
+thanks!,thankyou
 tq,thankyou
 thx,thankyou
 ok thanks,thankyou
-thanks ya,thankyou
+great. tq,thankyou
