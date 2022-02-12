@@ -2,12 +2,42 @@ version: "3.0"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+# - rule: Say goodbye anytime the user says goodbye
+#   steps:
+#   - intent: goodbye
+#   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+# - rule: Say 'I am a bot' anytime the user challenges
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_iamabot
+
+- rule: out-of-scope
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: nlu_fallback
+  - action: utter_out_of_scope
+
+- rule: Activate form
+  steps:
+  # - intent: bot_challenge
+  # - action: utter_iamabot
+  # - intent: greeting
+  # - action: utter_greeting
+  - intent: service
+  - action: utter_service
+  - action: user_details_form
+  # Stay in the form while all the required slots have not been filled
+  - active_loop: user_details_form
+
+- rule: Submit form
+  condition:
+  # condition that form is active.
+  - active_loop: user_details_form
+  steps:
+  # Form is deactivated
+  - action: user_details_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted
+  - action: action_submit

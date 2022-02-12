@@ -1,91 +1,261 @@
 version: "3.0"
 
 nlu:
-- intent: greet
+# - intent: greet
+  # examples: |
+  #   - hey
+  #   - hello
+  #   - hi
+  #   - hello there
+  #   - good morning
+  #   - good evening
+  #   - moin
+  #   - hey there
+  #   - let's go
+  #   - hey dude
+  #   - goodmorning
+  #   - goodevening
+  #   - good afternoon
+
+# - intent: goodbye
+  # examples: |
+  #   - cu
+  #   - good by
+  #   - cee you later
+  #   - good night
+  #   - bye
+  #   - goodbye
+  #   - have a nice day
+  #   - see you around
+  #   - bye bye
+  #   - see you later
+
+# - intent: affirm
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
+
+# - intent: deny
+#   examples: |
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
+
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+# - intent: bot_challenge
+#   examples: |
+#     - are you a bot?
+#     - are you a human?
+#     - am I talking to a bot?
+#     - am I talking to a human?
+
+- intent: greeting
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
     - good morning
+    - hello
+    - hey
+    - hi
+    - there?
+    - how are you
+    - yo
+    - good day
     - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
     - good afternoon
+
+- intent: thankyou
+  examples: |
+    - great. tq
+    - many thanks
+    - hey thanks
+    - thank you
+    - ty
+    - xie xie
+    - thanks!
+    - tq
+    - thx
+    - ok thanks
+    - thanks ya
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
+    - byebye
     - see you around
-    - bye bye
-    - see you later
+    - bye
+    - let's catchup again
+    - see you
+    - Have a great day
+    - goodbye
+    - ok bye
+    - ciao
+    - ttyl
 
-- intent: affirm
+- intent: ask_me
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - who are you
+    - what are you
+    - your name
+    - may i know who you are
+    - may i know what you are
+    - who
+    - you are?
+    - who am I talking to
 
-- intent: deny
+- intent: hours_info
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - Which day you close?
+    - When do you open
+    - Are you open on Saturdays?
+    - What time are you open until?
+    - What are your hours of operation?
+    - What are your hours?
+    - Are you open on Sundays?
+    - what are the hours of operation at your shop
+    - Which days you open?
+    - What are on-site hours?
+    - Are you available on weekend?
+    - When do you close
+    - When are you open
 
-- intent: mood_great
+- intent: service
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - grooming
+    - training
+    - boarding
+    - Do you have pet service?
+    - services?
+    - What do you provide?
+    - what are the pet service
+    - What service do you have?
+    - What do you have?
+    - What are the services you provided?
 
-- intent: mood_unhappy
+- intent: my_name
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - my name is [Kelvin]{"entity":"name", "value":"Kelvin"}
+    - my name is [Yap]{"entity":"name", "value":"Yap"}
+    - my name is [Xen]{"entity":"name", "value":"Xen"}
+    - [Kelvin]{"entity":"name", "value":"Kelvin"} is my name
+    - [Yap]{"entity":"name", "value":"Yap"} is my name
+    - [Xen]{"entity":"name", "value":"Xen"} is my name
+    - people call me [Kelvin]{"entity":"name", "value":"Kelvin"}
+    - people call me [Yap]{"entity":"name", "value":"Yap"}
+    - people call me [Xen]{"entity":"name", "value":"Xen"}
+    - I am [Kelvin]{"entity":"name", "value":"Kelvin"}
+    - I am [Yap]{"entity":"name", "value":"Yap"}
+    - I am [Xen]{"entity":"name", "value":"Xen"}
 
-- intent: bot_challenge
+- intent: my_service
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - I want [grooming]{"entity":"service", "value":"grooming"} service
+    - I want [boarding]{"entity":"service", "value":"boarding"} service
+    - I want [training]{"entity":"service", "value":"training"} service
+    - I am looking for [grooming]{"entity":"service", "value":"grooming"} service
+    - I am looking for [boarding]{"entity":"service", "value":"boarding"} service
+    - I am looking for [training]{"entity":"service", "value":"training"} service
+    - I need [grooming]{"entity":"service", "value":"grooming"} service
+    - I need [boarding]{"entity":"service", "value":"boarding"} service
+    - I need [training]{"entity":"service", "value":"training"} service
+
+- intent: my_breed
+  examples: |
+    - my pet is [Husky]{"entity":"breed", "value":"Husky"}
+    - my pet is [Beagle]{"entity":"breed", "value":"Beagle"}
+    - my pet is [Chihuahua]{"entity":"breed", "value":"Chihuahua"}
+    - my dog is [Husky]{"entity":"breed", "value":"Husky"}
+    - my dog is [Beagle]{"entity":"breed", "value":"Beagle"}
+    - my dog is [Chihuahua]{"entity":"breed", "value":"Chihuahua"}
+    - It is [Husky]{"entity":"breed", "value":"Husky"}
+    - It is [Beagle]{"entity":"breed", "value":"Beagle"}
+    - It is [Chihuahua]{"entity":"breed", "value":"Chihuahua"}
+
+# - intent: my_request
+#   examples: |
+#     - my number is [82096058]{"entity":"number"}
+#     - [82096058]{"entity":"number"} is my number
+#     - [82096058]{"entity":"number"}
+#     - my mobile number is [82096058]{"entity":"number"}
+
+# - intent: booking
+#   examples: |
+#     - I want to book a session for my pet
+#     - Do you have slots?
+#     - Can I reschedule?
+#     - I want to cancel my booking
+#     - I want to postpone my reservation
+#     - I want to make appointment
+#     - I want to book a slot
+#     - I would like to reserve a slot
+#     - I want to make reservation for my pet
+#     - I want to make new reservation
+#     - I want to change date
+#     - I want to change time
+#     - I want to book a service
+
+# - intent: location_info
+#   examples: |
+#     - How can we find you?
+#     - Do you have on site service?
+#     - Will you provide service at home?
+#     - Where are you physically located?
+#     - Where is your location?
+#     - What's the address of your shop?
+#     - Where is your store?
+#     - Where is your shop?
+#     - Where are you?
+#     - Do you have a shop?
+#     - What's your address?
+#     - location please?
+
+# - intent: price_info
+#   examples: |
+#     - pet service charges
+#     - how much
+#     - what is the price
+#     - what is the charges
+#     - price
+#     - how expensive
+#     - training price
+#     - Service price
+#     - boarding price
+#     - grooming price
