@@ -1,76 +1,14 @@
 version: "3.0"
 
 stories:
-
-# - story: happy path
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_great
-#   - action: utter_happy
-
-# - story: sad path 1
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: affirm
-#   - action: utter_happy
-
-# - story: sad path 2
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: utter_goodbye
-
-
-
-
-
-# - story: story 1
-#   steps:
-#   - intent: greeting
-#   - action: utter_greeting
-#   - intent: thankyou
-#   - action: utter_thankyou
-
-- story: story 2
+- story: story 1 basic response
   steps:
   - intent: greeting
   - action: utter_greeting
   - intent: goodbye
   - action: utter_goodbye
 
-# - story: story 3
-#   steps:
-#   - intent: greeting
-#   - action: utter_greeting
-#   - intent: ask_me
-#   - action: utter_iam
-#   - intent: thankyou
-#   - action: utter_thankyou
-
-# - story: story 4
-#   steps:
-#   - intent: greeting
-#   - action: utter_greeting
-#   - intent: ask_me
-#   - action: utter_iam
-#   - intent: goodbye
-#   - action: utter_goodbye
-
-# - story: story 5
-#   steps:
-#   - intent: greeting
-#   - action: utter_greeting
-
-- story: happy story 1
+- story: story 2 more responses
   steps:
   - intent: greeting
   - action: utter_greeting
@@ -81,7 +19,7 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
-- story: happy story 2
+- story: story 3 entities extraction and slot filling
   steps:
   - intent: greeting
   - action: utter_greeting
@@ -94,33 +32,3 @@ stories:
   - slot_was_set:
     - my_name: "Kelvin"
   - action: utter_greet_with_name
-  # - intent: thankyou
-  # - action: utter_thanks_with_name
-  # - intent: goodbye
-  # - action: utter_bye_with_name
-
-# - story: happy story 1
-#   steps:
-#   - intent: greeting
-#   - action: utter_greeting
-#   - intent: ask_me
-#   - action: utter_iam
-#   - action: utter_ask_name
-#   - intent: services
-#   - action: utter_services
-#   - intent: thankyou
-#   - action: utter_thankyou
-#   - intent: goodbye
-#   - action: utter_goodbye
-
-# - story: happy story 2
-#   steps:
-#   - intent: greeting
-#   - action: utter_greeting
-#   - action: utter_ask_name
-#   - intent: my_name
-#     entities:
-#     - name: Kelvin
-#   - slot_was_set: 
-#     - name: "Kelvin"
-#   - action: utter_thankyou
