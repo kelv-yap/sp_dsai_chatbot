@@ -1,14 +1,7 @@
 version: "3.0"
 
 stories:
-- story: story 1 basic response
-  steps:
-  - intent: greeting
-  - action: utter_greeting
-  - intent: goodbye
-  - action: utter_goodbye
-
-- story: story 2 more responses
+- story: story 1 basic responses
   steps:
   - intent: greeting
   - action: utter_greeting
@@ -19,7 +12,7 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
-- story: story 3 entities extraction and slot filling
+- story: story 2 entities extraction and slot filling
   steps:
   - intent: greeting
   - action: utter_greeting
